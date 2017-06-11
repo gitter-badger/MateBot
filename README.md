@@ -1,4 +1,6 @@
 # MateBot
+[![Build Status](https://travis-ci.org/CodeFromCirc/MateBot.svg?branch=master)](https://travis-ci.org/CodeFromCirc/MateBot)
+
 A bot for Discord and Twitch (Twitch coming soon)
 
 Uses the JDA library and the library to use for Twitch is still being decided.
