@@ -60,7 +60,6 @@ public class Version implements Comparable<Version>
         return String.format("%d.%d.%d_%d", major, minor, revision, build);
     }
 
-    @Override
     public int compareTo(Version o)
     {
         if (equals(o))

@@ -71,17 +71,15 @@ public class Music extends ListenerAdapter {
   }
 
   private void loadAndPlay(final TextChannel channel, final String trackUrl) {
-    GuildMusicManager musicManager = getGuildAudioPlayer(channel.getGuild());
+    final GuildMusicManager musicManager = getGuildAudioPlayer(channel.getGuild());
 
     playerManager.loadItemOrdered(musicManager, trackUrl, new AudioLoadResultHandler() {
-      @Override
       public void trackLoaded(AudioTrack track) {
         channel.sendMessage("Adding to queue " + track.getInfo().title).queue();
 
         play(channel.getGuild(), musicManager, track);
       }
 
-      @Override
       public void playlistLoaded(AudioPlaylist playlist) {
         AudioTrack firstTrack = playlist.getSelectedTrack();
 
@@ -94,12 +92,10 @@ public class Music extends ListenerAdapter {
         play(channel.getGuild(), musicManager, firstTrack);
       }
 
-      @Override
       public void noMatches() {
         channel.sendMessage("Nothing found by " + trackUrl).queue();
       }
 
-      @Override
       public void loadFailed(FriendlyException exception) {
         channel.sendMessage("Could not play: " + exception.getMessage()).queue();
       }

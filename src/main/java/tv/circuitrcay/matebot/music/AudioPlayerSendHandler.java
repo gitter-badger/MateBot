@@ -20,7 +20,6 @@ public class AudioPlayerSendHandler implements AudioSendHandler {
     this.audioPlayer = audioPlayer;
   }
 
-  @Override
   public boolean canProvide() {
     if (lastFrame == null) {
       lastFrame = audioPlayer.provide();
@@ -29,7 +28,6 @@ public class AudioPlayerSendHandler implements AudioSendHandler {
     return lastFrame != null;
   }
 
-  @Override
   public byte[] provide20MsAudio() {
     if (lastFrame == null) {
       lastFrame = audioPlayer.provide();
@@ -41,7 +39,6 @@ public class AudioPlayerSendHandler implements AudioSendHandler {
     return data;
   }
 
-  @Override
   public boolean isOpus() {
     return true;
   }
