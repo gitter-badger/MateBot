@@ -1,5 +1,5 @@
 # MateBot
-[![Build Status](https://travis-ci.org/CodeFromCirc/MateBot.svg?branch=master)](https://travis-ci.org/CodeFromCirc/MateBot)
+
 
 A bot for Discord and Twitch (Twitch coming soon)
 
