@@ -1,5 +1,7 @@
 # MateBot
 
+[![Join the chat at https://gitter.im/MateBot/Lobby](https://badges.gitter.im/MateBot/Lobby.svg)](https://gitter.im/MateBot/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 A bot for Discord and Twitch (Twitch coming soon)
 
